@@ -154,56 +154,56 @@
                 <div class="con2-2">
                     <a class="con22" href="">
                         <div class="con221">
-                            <div class="con-tt">Phân bón hữu cơ</div>
-                            <div class="con-sl">150+ sản phẩm</div>
+                            <div class="con-tt">Thép cuộn</div>
+                            <div class="con-sl">10+ sản phẩm</div>
                         </div>
 
                         <div class="con222img">
-                            <img style="height: 100%; width: 100%;" src="https://product.hstatic.net/200000239387/product/phan_bon_npk_dau_bo_19-12-8_5s_1kg_55c0b35cd8384626845e75a5db1e792a_1024x1024.jpg" alt="">
+                            <img style="height: 100%; width: 100%;" src="https://www.tradeline.vn/Thumb.ashx?s=500&file=/UploadImages/users/upload/member/THANHCONGINDEX/280818021817thephoaphat68jpg.jpg" alt="">
                         </div>
                     </a>
 
                     <a class="con22" href="">
                         <div class="con221">
-                            <div class="con-tt">Máy cắt cỏ</div>
-                            <div class="con-sl">100+ sản phẩm</div>
+                            <div class="con-tt">Dây thép</div>
+                            <div class="con-sl">10+ sản phẩm</div>
                         </div>
 
                         <div class="con222img">
-                            <img style="height: 100%; width: 100%;" src="https://kingsport.vn/image/catalog/product/may_cat_co/M_y_c_t_c_Shindaiwa_260.png" alt="">
+                            <img style="height: 100%; width: 100%;" src="https://www.tradeline.vn/Thumb.ashx?s=500&file=/UploadImages/users/upload/member/KIMTINGROUP/02051902134113day-thep-buoc-nikkojpg0.jpg"alt="">
                         </div>
                     </a>
 
                     <a class="con22" href="">
                         <div class="con221">
-                            <div class="con-tt">Phâm đạm</div>
-                            <div class="con-sl">60+ sản phẩm</div>
+                            <div class="con-tt">Đá 4x6</div>
+                            <div class="con-sl">10+ sản phẩm</div>
                         </div>
 
                         <div class="con222img">
-                            <img style="height: 100%; width: 100%;" src="https://product.hstatic.net/1000269461/product/phan-bon-ure-dam-phu-my_89c43f2bfccb45babe76bee869033818_master.jpg" alt="">
+                            <img style="height: 100%; width: 100%;" src="https://www.tradeline.vn/Thumb.ashx?s=500&file=/UploadImages/users/upload/member/LUONGTHANHDAT/17121804450745da-4x6-tradelinejpg0.jpg" alt="">
                         </div>
                     </a>
 
                     <a class="con22" href="">
                         <div class="con221">
-                            <div class="con-tt">Kéo cắt cành</div>
-                            <div class="con-sl">50+ sản phẩm</div>
+                            <div class="con-tt">Bê tông chịu nhiệt</div>
+                            <div class="con-sl">10+ sản phẩm</div>
                         </div>
 
                         <div class="con222img">
-                            <img style="height: 100%; width: 100%;" src="https://www.ketnoitieudung.vn/data/bt10/keo-cat-canh-tolsen-31018-1512958240.jpg" alt="">
+                            <img style="height: 100%; width: 100%;" src="https://www.tradeline.vn/Thumb.ashx?s=500&file=/UploadImages/users/upload/member/CHIULUAHUNGDAO/23111803073607be-tong-chiu-lua-tradelinejpg0.jpg" alt="">
                         </div>
                     </a>
 
                     <a class="con22" href="">
                         <div class="con221">
-                            <div class="con-tt">Bình tưới cây</div>
-                            <div class="con-sl">50+ sản phẩm</div>
+                            <div class="con-tt">Xi măng</div>
+                            <div class="con-sl">10+ sản phẩm</div>
                         </div>
 
                         <div class="con222img">
-                            <img style="height: 100%; width: 100%;" src="https://thapxanh.com/images/thumbs/0018917_binh-xit-tuoi-cay-8-lit-dudaco-binh-tuoi-phun-suong-binh-phun-thuoc-tru-sau-phun-thuoc-muoi-moi.jpeg" alt="">
+                            <img style="height: 100%; width: 100%;" src="https://www.tradeline.vn/Thumb.ashx?s=500&file=/UploadImages/users/upload/member/VLXDBINHDUONG/050918110720796x796zmaxxi-mang-holcimjpg.jpg" alt="">
                         </div>
                     </a>
                 </div>
@@ -221,30 +221,29 @@
 
                     <article class="con5-2-1">
                         <a class="thea" href="">
-                            <h4>QUY TRÌNH TRỒNG VÀ CHẮM SÓC CÂY MAI ĐÚNG KỸ THUẬT</h4>
+                            <h4>CƯ DÂN CĂN HỘ "TRIỆU ĐÔ" TRUNG TÂM QUẬN 1 LÀ AI? </h4>
                         </a>
-                        <img class="theimg" src="http://localhost/santmdt/public/img/hoa-mai-vang.jpg" alt="">
-                        <p class="thep">Mai có xuất xứ từ cây hoang dại, có khả năng thích ứng tốt với điều kiện khí hậu nhiệt đới,
-                            đặc biệt với khí hậu miền Nam. Cây mai sinh trưởng và phát triển mạnh,
-                            có tuổi thọ cao và nếu được chăm sóc chu đáo sẽ cho hoa nhiều và có màu sắc đẹp.</p>
+                        <img class="theimg" src="https://www.tradeline.vn/Thumb.ashx?s=370&file=/https://cdn.24h.com.vn/upload/1-2019/images/2019-01-22/Cu-dan-can-ho-trieu-do-trung-tam-quan-1-la-ai-can-ho-trieu-do-4-1548119975-81-width660height368.jpg" alt="">
+                        <p class="thep">Bà Elena Goh – nhà đầu tư bất động sản người Singapore là một trong những chủ nhân đầu tiên
+						của The Grand Manhattan. Bà cho biết: “TP.HCM là một thị trường mà vợ chồng tôi đã để ý từ lâu. Khi dự án vừa ra mắt, 
+						chúng tôi đã quyết định ngay mà không cần đắn đo gì cả.</p>
                     </article>
                     <article class="con5-2-1">
                         <a class="thea" href="">
-                            <h4>QUY TRÌNH TRỒNG VÀ CHẮM SÓC CÂY CÀ PHÊ ĐÚNG KỸ THUẬT</h4>
+                            <h4>THỪA THIÊN - HUẾ: XÂY DỰNG CÔNG TRÌNH TRÁI PHÉP THÁCH THỨC DƯ LUẬN</h4>
                         </a>
-                        <img class="theimg" src="http://localhost/santmdt/public/img/ky_thuat_trong_ca_phe.jpg" alt="">
-                        <p class="thep">Mai có xuất xứ từ cây hoang dại, có khả năng thích ứng tốt với điều kiện khí hậu nhiệt đới,
-                            đặc biệt với khí hậu miền Nam. Cây mai sinh trưởng và phát triển mạnh,
-                            có tuổi thọ cao và nếu được chăm sóc chu đáo sẽ cho hoa nhiều và có màu sắc đẹp.</p>
+                        <img class="theimg" src="https://www.tradeline.vn/Thumb.ashx?s=370&file=/https://bxdgate.baoxaydung.com.vn/stores/news_dataimages/hiep/032020/26/10/4128_image001.jpg" alt="">
+                        <p class="thep">(Xây dựng) - Liên tục bị xử phạt vi phạm về trật tự xây dựng công trình cư xá Vỹ Dạ, kiệt 138 Nguyễn Sinh Cung
+						(thành phố Huế), nhưng không hiểu vì lý do gì, chủ đầu tư vẫn ngang nhiên xây vượt thêm 2 tầng so với giấy phép xây dựng mà 
+						không gặp bất cứ trở ngại nào từ phía chính quyền địa phương.</p>
 
                     </article>
                     <article class="con5-2-1">
                         <a class="thea" href="">
-                            <h4>GIỚI THIỆU QUY TRÌNH TRỒNG XOÀI, HƯỚNG DẪN CHĂM SÓC CÂY XOÀI</h4>
+                            <h4>PHỤ GIA KÉO DÀI THỜI GIAN NINH KẾT</h4>
                         </a>
-                        <img class="theimg" src="http://localhost/santmdt/public/img/cay-xoai-6.jpg" alt="">
-                        <p class="thep">Giới thiệu quy trình kỹ thuật trồng cà phê, hướng dẫn chăm sóc cây cà phê cho năng suất cao và ổn định.
-                            Ngoài việc lựa chọn giống cà phê đạt tiêu chuẩn, có xuất xứ rõ ràng, thì kỹ thuật trồng cũng quyết định không nhỏ đến sinh trưởng và năng suất của vườn cà phê.
+                        <img class="theimg" src="https://www.tradeline.vn/UploadImages/phu%20gia%20keo%20dai%20thoi%20gian%20ninh%20ket(1)-min.png" alt="">
+                        <p class="thep">Giống như tên của nó, phụ gia kéo dài thời gian ninh kết có tác dụng kéo dài thời gian ninh kết của hỗn hợp bê tông. Tác dụng của phụ gia biểu hiện ở các mức độ khác nhau, phụ thuộc vào tính chất của xi măng, liều lượng sử dụng. Cần lưu ý khi sử dụng quá liều lượng sẽ làm chậm đáng kể thời gian ninh kết.
                         </p>
 
                     </article>
