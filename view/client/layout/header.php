@@ -20,11 +20,10 @@
         <div id="he2-2">
             <ul id="luachon">
                 <li><a href="http://localhost/vatlxd/?router=trangchu">Trang chủ</a></li>
-                <li><a href="">Sản phẩm</a>
-                </li>
-                <li><a href="">Giới thiệu</a></li>
-                <li><a href="">Tin tức</a></li>
-                <li><a href="">Liên hệ</a></li>
+                <li><a href="">Sản phẩm</a></li>
+                <li><a href="http://localhost/vatlxd/?router=gioithieu">Giới thiệu</a></li>
+                <li><a href="http://localhost/vatlxd/?router=tintuc">Tin tức</a></li>
+                <li><a href="http://localhost/vatlxd/?router=lienhe">Liên hệ</a></li>
             </ul>
         </div>
     </div>
