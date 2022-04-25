@@ -18,6 +18,22 @@ class Accounts extends dbConnect
         $stmt = null;
     }
 
+    public function getAllSP()
+    {
+        $stmt = $this->connect()->prepare('SELECT * FROM `sanpham`');
+        $stmt->setFetchMode(PDO::FETCH_ASSOC);
+        if ($stmt->execute()) {
+            // header('Content/type: application/json');
+            return ($stmt->fetchAll());
+        } else {
+            // page error
+        }
+
+        $stmt = null;
+    }
+
+
+
     public function getUsernameBySession()
     {
         echo $_SESSION['user']['TEN_DANG_NHAP'];
@@ -25,8 +41,22 @@ class Accounts extends dbConnect
 
     public function getNameBySession()
     {
-        echo $_SESSION['user']['ten_khachhang'];
+        
+            echo $_SESSION['user']['ten_khachhang'];
+            
     }
+
+    public function getAdminBySession()
+    {
+        
+            echo $_SESSION['user']['ten_admin'];
+            
+    }
+
+
+    
+
+    
 
     public function isUsernameExist($username)
     {
@@ -61,8 +91,8 @@ class Accounts extends dbConnect
     {
         if($role == 'khachhang') {
             $stmt = $this->connect()->prepare('SELECT `khachhang`.ID_khachhang, `taikhoan`.TEN_DANG_NHAP, `khachhang`.ten_khachhang FROM `taikhoan`, `khachhang` WHERE `taikhoan`.TEN_DANG_NHAP = `khachhang`.`TEN_DANG_NHAP` AND `taikhoan`.TEN_DANG_NHAP=? AND `taikhoan`.MATKHAU=?');
-        } else {
-            $stmt = $this->connect()->prepare('SELECT `nha_ban_le`.ID_KH, `taikhoan`.TEN_DANG_NHAP, `nha_ban_le`.HOTEN FROM `taikhoan`, `nha_ban_le` WHERE `taikhoan`.TEN_DANG_NHAP = `nha_ban_le`.`TEN_DANG_NHAP` AND `taikhoan`.TEN_DANG_NHAP=? AND `taikhoan`.MATKHAU=?');
+        } else if($role == 'admin') {
+            $stmt = $this->connect()->prepare('SELECT `admin`.ID_admin, `taikhoan`.TEN_DANG_NHAP, `admin`.ten_admin FROM `taikhoan`, `admin` WHERE `taikhoan`.TEN_DANG_NHAP = `admin`.`TEN_DANG_NHAP` AND `taikhoan`.TEN_DANG_NHAP=? AND `taikhoan`.MATKHAU=?');
         }
         $stmt->setFetchMode(PDO::FETCH_ASSOC);
         if (!$stmt->execute(array($username, $password))) {
