@@ -1,17 +1,18 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="http://localhost/vatlxd/public/img/logo.png">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <link rel="stylesheet" href="http://localhost/santmdt/public/css/layouts.css">
-    <link rel="stylesheet" href="http://localhost/santmdt/public/css/sanpham.css">
-
+    <link rel="stylesheet" href="http://localhost/vatlxd/public/css/layouts.css">
+    <link rel="stylesheet" href="http://localhost/vatlxd/public/css/sanpham.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css" rel="stylesheet"> 
 
-    <title>Trang chủ - Sàn Thương mại số 1 Việt Nam</title>
+    <title>Sản Phẩm</title>
 </head>
 
 <body>
@@ -19,160 +20,36 @@
         <!-- header -->
         <?php include('./view/client/layout/header.php'); ?>
         <!-- End header -->
+        <?php
+   
+           
+            $accounts = $account->getAllSP();
+         
+
+        ?>
 
         <!-- Content -->
     <div class="wrap">
-       <div class="filter">
-           <div class="range-title"><h3>Lọc giá sản phẩm</h3></div>
-           <div class="range-wrap">
-               <div class="range-value" id ="range-V"></div>
-               <input id ="range" type="range" min="10000" max ="3000000" value="200" step ="1">
-           </div>
-
-           <br>
-           <b><hr style ="size : 2px;"></b>
-           
-           <div class="category">
-           
-            <h3>Lọc theo loại sản phẩm</h3>
-
-                <div id="myBtnContainer">
-                <button class="btn active" onclick="filterSelection('all')"> Thuốc trừ sâu</button>
-                <button class="btn" onclick="filterSelection('nature')"> Thuốc diệt cỏ</button>
-                <button class="btn" onclick="filterSelection('cars')"> Phân hữu cơ</button>
-                <button class="btn" onclick="filterSelection('people')"> Phân vô cơ</button>
-                <button class="btn" onclick="filterSelection('people')"> Béc tưới cây</button>
-                <button class="btn" onclick="filterSelection('people')"> Máy căt cỏ</button>
-                <button class="btn" onclick="filterSelection('people')"> Dụng cụ làm vườn</button>
-                <button class="btn" onclick="filterSelection('people')"> Đất trồng cây</button>
-                </div>
-           </div>
-           <div class="blog">
-                <div class="blog1">
-                    <article class="con5-2-1">
-                            <a class="thea" href=""><h4>GIỚI THIỆU QUY TRÌNH TRỒNG XOÀI, HƯỚNG DẪN CHĂM SÓC CÂY XOÀI</h4></a>
-                            <img class="theimg" src="http://localhost/santmdt/public/img/cay-xoai-6.jpg" alt="">
-                            <p class="thep">Giới thiệu quy trình kỹ thuật trồng cà phê, hướng dẫn chăm sóc cây cà phê cho năng suất cao và ổn định. 
-                                <!-- Ngoài việc lựa chọn giống cà phê đạt tiêu chuẩn, có xuất xứ rõ ràng, thì kỹ thuật trồng cũng quyết định không nhỏ đến sinh trưởng và năng suất của vườn cà phê.  -->
-                            </p>
-                    </article>
-                </div>
-                <div class="blog1">
-                    <article class="con5-2-1">
-                                <a class="thea" href=""><h4>GIỚI THIỆU QUY TRÌNH TRỒNG XOÀI, HƯỚNG DẪN CHĂM SÓC CÂY XOÀI</h4></a>
-                                <img class="theimg" src="http://localhost/santmdt/public/img/cay-xoai-6.jpg" alt="">
-                                <p class="thep">Giới thiệu quy trình kỹ thuật trồng cà phê, hướng dẫn chăm sóc cây cà phê cho năng suất cao và ổn định. 
-                                    <!-- Ngoài việc lựa chọn giống cà phê đạt tiêu chuẩn, có xuất xứ rõ ràng, thì kỹ thuật trồng cũng quyết định không nhỏ đến sinh trưởng và năng suất của vườn cà phê.  -->
-                                </p>
-                    </article>
-                </div>
-                <div class="blog1">
-                    <article class="con5-2-1">
-                            <a class="thea" href=""><h4>GIỚI THIỆU QUY TRÌNH TRỒNG XOÀI, HƯỚNG DẪN CHĂM SÓC CÂY XOÀI</h4></a>
-                            <img class="theimg" src="http://localhost/santmdt/public/img/cay-xoai-6.jpg" alt="">
-                            <p class="thep">Giới thiệu quy trình kỹ thuật trồng cà phê, hướng dẫn chăm sóc cây cà phê cho năng suất cao và ổn định. 
-                                <!-- Ngoài việc lựa chọn giống cà phê đạt tiêu chuẩn, có xuất xứ rõ ràng, thì kỹ thuật trồng cũng quyết định không nhỏ đến sinh trưởng và năng suất của vườn cà phê.  -->
-                            </p>
-                    </article>
-                </div>
-            </div>s
-           
-
-       </div>
-
         <div class="product">
+            <?php
+                foreach($accounts as $key => $value) {
+            ?>
             <div class="detail_pro">
                 <div class="item">
                     <div class="item_img">
-                        <img src="https://product.hstatic.net/1000220686/product/hat-giong-bap-nep-lai-vh686_feff5e3b06934d3b91ff0734e9c6857b_medium.jpg" alt="không tồn tại">
+                        <img src="public/img/sanpham/<?php echo $value['HinhAnhSP'] ?>" alt="không tồn tại">
                     </div>
                     <div class="item_des">
-                      <div class="item_title">Hạt Giống Bắp (Ngô) Nữ Hoàng Đỏ - Giống F1, Nhập Khẩu Chính Hãng, Đảm Bảo Chất Lượng - Gói 50 hạt </div>  
-                      <div class="item_price"> 50,000   <ins>đ</ins></div>
+                      <div class="item_title">Tên sản phẩm:<?php echo $value['TenSP'] ?></div>  
+                      <div class="item_price">Giá:<?php echo $value['GiaSP'] ?><ins>đ</ins></div>
                       <div class="item_cart"><a class= "cart" href="#">Thêm vào giỏ hàng</a></div>
+                      
                     </div>
+                   
                 </div>
-
-                <div class="item">
-                    <div class="item_img">
-                        <img src="https://product.hstatic.net/1000220686/product/hat-giong-bap-nep-lai-vh686_feff5e3b06934d3b91ff0734e9c6857b_medium.jpg" alt="không tồn tại">
-                    </div>
-                    <div class="item_des">
-                      <div class="item_title">Hạt Giống Bắp (Ngô) Nữ Hoàng Đỏ - Giống F1, Nhập Khẩu Chính Hãng, Đảm Bảo Chất Lượng - Gói 50 hạt </div>  
-                      <div class="item_price"> 50,000   <ins>đ</ins></div>
-                      <div class="item_cart"><a class= "cart" href="#">Thêm vào giỏ hàng</a></div>
-                    </div>
-                </div>
-
-                <div class="item">
-                    <div class="item_img">
-                        <img src="https://product.hstatic.net/1000220686/product/hat-giong-bap-nep-lai-vh686_feff5e3b06934d3b91ff0734e9c6857b_medium.jpg" alt="không tồn tại">
-                    </div>
-                    <div class="item_des">
-                      <div class="item_title">Hạt Giống Bắp (Ngô) Nữ Hoàng Đỏ - Giống F1, Nhập Khẩu Chính Hãng, Đảm Bảo Chất Lượng - Gói 50 hạt </div>  
-                      <div class="item_price"> 50,000   <ins>đ</ins></div>
-                      <div class="item_cart"><a class= "cart" href="#">Thêm vào giỏ hàng</a></div>
-                    </div>
-                </div>
-
-                <div class="item">
-                    <div class="item_img">
-                        <img src="https://product.hstatic.net/1000220686/product/hat-giong-bap-nep-lai-vh686_feff5e3b06934d3b91ff0734e9c6857b_medium.jpg" alt="không tồn tại">
-                    </div>
-                    <div class="item_des">
-                      <div class="item_title">Hạt Giống Bắp (Ngô) Nữ Hoàng Đỏ - Giống F1, Nhập Khẩu Chính Hãng, Đảm Bảo Chất Lượng - Gói 50 hạt </div>  
-                      <div class="item_price"> 50,000   <ins>đ</ins></div>
-                      <div class="item_cart"><a class= "cart" href="#">Thêm vào giỏ hàng</a></div>
-                    </div>
-                </div>
+                
             </div>
-
-            <div class="detail_pro">
-                <div class="item">
-                    <div class="item_img">
-                        <img src="https://product.hstatic.net/1000220686/product/hat-giong-bap-nep-lai-vh686_feff5e3b06934d3b91ff0734e9c6857b_medium.jpg" alt="không tồn tại">
-                    </div>
-                    <div class="item_des">
-                      <div class="item_title">Hạt Giống Bắp (Ngô) Nữ Hoàng Đỏ - Giống F1, Nhập Khẩu Chính Hãng, Đảm Bảo Chất Lượng - Gói 50 hạt </div>  
-                      <div class="item_price"> 50,000   <ins>đ</ins></div>
-                      <div class="item_cart"><a class= "cart" href="#">Thêm vào giỏ hàng</a></div>
-                    </div>
-                </div>
-
-                <div class="item">
-                    <div class="item_img">
-                        <img src="https://product.hstatic.net/1000220686/product/hat-giong-bap-nep-lai-vh686_feff5e3b06934d3b91ff0734e9c6857b_medium.jpg" alt="không tồn tại">
-                    </div>
-                    <div class="item_des">
-                      <div class="item_title">Hạt Giống Bắp (Ngô) Nữ Hoàng Đỏ - Giống F1, Nhập Khẩu Chính Hãng, Đảm Bảo Chất Lượng - Gói 50 hạt </div>  
-                      <div class="item_price"> 50,000   <ins>đ</ins></div>
-                      <div class="item_cart"><a class= "cart" href="#">Thêm vào giỏ hàng</a></div>
-                    </div>
-                </div>
-
-                <div class="item">
-                    <div class="item_img">
-                        <img src="https://product.hstatic.net/1000220686/product/hat-giong-bap-nep-lai-vh686_feff5e3b06934d3b91ff0734e9c6857b_medium.jpg" alt="không tồn tại">
-                    </div>
-                    <div class="item_des">
-                      <div class="item_title">Hạt Giống Bắp (Ngô) Nữ Hoàng Đỏ - Giống F1, Nhập Khẩu Chính Hãng, Đảm Bảo Chất Lượng - Gói 50 hạt </div>  
-                      <div class="item_price"> 50,000   <ins>đ</ins></div>
-                      <div class="item_cart"><a class= "cart" href="#">Thêm vào giỏ hàng</a></div>
-                    </div>
-                </div>
-
-                <div class="item">
-                    <div class="item_img">
-                        <img src="https://product.hstatic.net/1000220686/product/hat-giong-bap-nep-lai-vh686_feff5e3b06934d3b91ff0734e9c6857b_medium.jpg" alt="không tồn tại">
-                    </div>
-                    <div class="item_des">
-                      <div class="item_title">Hạt Giống Bắp (Ngô) Nữ Hoàng Đỏ - Giống F1, Nhập Khẩu Chính Hãng, Đảm Bảo Chất Lượng - Gói 50 hạt </div>  
-                      <div class="item_price"> 50,000   <ins>đ</ins></div>
-                      <div class="item_cart"><a class= "cart" href="#">Thêm vào giỏ hàng</a></div>
-                    </div>
-                </div>
-            </div>
-         
+            <?php }; ?>
         </div>
         
     </div>
@@ -202,3 +79,4 @@
         range.addEventListener('input', setValue);
     </script>
 </html>
+
