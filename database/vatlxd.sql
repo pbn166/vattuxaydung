@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 19, 2022 at 07:14 AM
+-- Generation Time: Apr 25, 2022 at 10:47 AM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 7.4.27
 
@@ -35,6 +35,13 @@ CREATE TABLE `admin` (
   `SDT` varchar(10) COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
   `email` varchar(60) COLLATE utf8mb4_vietnamese_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_vietnamese_ci;
+
+--
+-- Dumping data for table `admin`
+--
+
+INSERT INTO `admin` (`ID_admin`, `TEN_DANG_NHAP`, `ten_admin`, `ngaysinh`, `SDT`, `email`) VALUES
+(4, 'admin', 'admin', '1999-01-01', '0798003703', ' vatlieuxaydung@gmail.com');
 
 -- --------------------------------------------------------
 
@@ -100,6 +107,14 @@ CREATE TABLE `khachhang` (
   `ID_loaikhachhang` char(5) COLLATE utf8mb4_vietnamese_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_vietnamese_ci;
 
+--
+-- Dumping data for table `khachhang`
+--
+
+INSERT INTO `khachhang` (`ID_khachhang`, `TEN_DANG_NHAP`, `ten_khachhang`, `ngaysinh`, `gioitinh`, `SDT`, `Email`, `ID_loaikhachhang`) VALUES
+(3, 'thuthuy24', 'HuynhThiThuThuy', NULL, NULL, '0949392730', 'thuyB1906348@student.ctu.edu.vn', NULL),
+(5, 'pbn.166', 'Phan Thi Ai Nhi', NULL, NULL, '0798003703', 'nhipta2016@student.ctu.edu.vn', NULL);
+
 -- --------------------------------------------------------
 
 --
@@ -122,6 +137,17 @@ CREATE TABLE `loaisanpham` (
   `ten_loaisanpham` varchar(30) COLLATE utf8mb4_vietnamese_ci NOT NULL,
   `trangthai_loaisanpham` char(2) COLLATE utf8mb4_vietnamese_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_vietnamese_ci;
+
+--
+-- Dumping data for table `loaisanpham`
+--
+
+INSERT INTO `loaisanpham` (`ID_loaisanpham`, `ten_loaisanpham`, `trangthai_loaisanpham`) VALUES
+('BT', 'bê tông', 'y'),
+('CĐ', 'cát/ đá', 'y'),
+('G', 'gạch xây dựng', 'y'),
+('ST', 'Sắt/ Thép xây dựng', 'y'),
+('XM', 'xi măng', 'y');
 
 -- --------------------------------------------------------
 
@@ -148,9 +174,8 @@ CREATE TABLE `sanpham` (
 --
 
 INSERT INTO `sanpham` (`STT`, `DanhMucSP`, `LoaiSP`, `TenSP`, `HinhAnhSP`, `MaSP`, `NhaCungCap`, `XuatXu`, `MoTa`, `GiaSP`, `DonViTinh`) VALUES
-(104, '', '', '', '', '', '', '', '', 0, ''),
-(1, 'Sắt/ Thép xây dựng', 'Thép cuộn', 'Thép cuộn Hòa Phát', '', '001', 'Hòa Phát', 'Việt Nam', 'Trên thị trường thép Hòa Phát hiện nay xuất hiện nhiều sản phẩm giả, không đúng với chất lượng, quy cách ,chủng loại và mẫu mã của sản phẩm.Việc mua phải những sản phẩm giả này sẽ ảnh hưởng tới chất lượng công trình thi công. Do vậy, chúng tôi xin chia sẻ', 14, 'Kg'),
-(2, 'Sắt/ Thép xây dựng', 'Thép cuộn', 'Thép cuộn trơn POMINA', '', '002', 'POMINA', 'Việt Nam', 'Thép cuộn dạng dây, cuộn tròn, bề mặt trơn nhẵn có đường kính thông thường là: Ø6mm, Ø8mm\nTiêu chuẩn:\n– Theo TCVN 1651-1:2008: CB240-T, CB300-T', 15, 'Tấn'),
+(1, 'Sắt/ Thép xây dựng', 'Thép cuộn', 'Thép cuộn Hòa Phát', 'thepcuonhoaphat.png', '001', 'Hòa Phát', 'Việt Nam', 'Trên thị trường thép Hòa Phát hiện nay xuất hiện nhiều sản phẩm giả, không đúng với chất lượng, quy cách ,chủng loại và mẫu mã của sản phẩm.Việc mua phải những sản phẩm giả này sẽ ảnh hưởng tới chất lượng công trình thi công. Do vậy, chúng tôi xin chia sẻ', 14, 'Kg'),
+(2, 'Sắt/ Thép xây dựng', 'Thép cuộn', 'Thép cuộn trơn POMINA', 'thepcuontronPOMINA.png', '002', 'POMINA', 'Việt Nam', 'Thép cuộn dạng dây, cuộn tròn, bề mặt trơn nhẵn có đường kính thông thường là: Ø6mm, Ø8mm\nTiêu chuẩn:\n– Theo TCVN 1651-1:2008: CB240-T, CB300-T', 15, 'Tấn'),
 (3, 'Sắt/ Thép xây dựng', 'Lưới thép ', 'lưới B40 ', '', '003', 'Thành lợi', 'Việt Nam', 'Sản xuất bằng dây thép mạ kẽm nhúng nóng\n\n– Lớp mạ kẽm dày chống rỉ cực tốt\n\n– Giá thành rẻ, lớp mạ bóng đẹp\n\n– Sản phẩm đạt tiêu chuẩn xuất khẩu và  TCVN 2053-1993, JIS 3521-1991\n\n– Lượng kẽm của dây đạt 40µm  128 > 140  g/m2\n\nvà hàng đạt tiêu chuẩn xuất', 25, 'mét dài'),
 (4, 'Sắt/ Thép xây dựng', 'Lưới thép ', 'Lưới B40 mạ kẽm', '', '004', 'thành lợi steel', 'Việt Nam', 'Lưới thép B40 là sản phẩm lưới thép hàng rào truyền thống có mặt trên thị trường khá sớm, với sự tiện lợi về giá thành rẻ, dễ vận chuyển, thi công lắp đặt dễ dàng, không rỉ sét... đem lại hiệu quả rất lớn và thiết thực cho các công trình xây dựng lớn nhỏ.', 65, 'mét dài'),
 (5, 'Sắt/ Thép xây dựng', 'Lưới thép ', 'lưới b40 bọc nhựa', '', '005', 'KHANH KIỀU', 'Việt Nam', 'Lưới B40 bọc nhựa là sản phẩm sợi dây được mạ kẽm và bọc một lớp nhựa phủ bề ngoài , sau đó qua công đoạn máy đan thành mắt hình trám hay hình vuông có kích thước như : 20-20 , 30-30 , 30-30 , 40-40 , 50-50 , 60-60 , 70-70 (mm)\n\nVới lớp nhựa PVC được bọc ', 78, 'mét dài'),
@@ -263,6 +288,15 @@ CREATE TABLE `taikhoan` (
   `NGAYLAP_TK` datetime DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_vietnamese_ci;
 
+--
+-- Dumping data for table `taikhoan`
+--
+
+INSERT INTO `taikhoan` (`TEN_DANG_NHAP`, `MATKHAU`, `NGAYLAP_TK`) VALUES
+('admin', '21232f297a57a5a743894a0e4a801fc3', '2022-04-20 14:56:23'),
+('pbn.166', 'a599757617fa43645a4a2e19c11e0971', '2022-04-19 18:05:59'),
+('thuthuy24', '44efdae936b84845bc9dd984d1e7b8ad', '2022-04-19 14:44:43');
+
 -- --------------------------------------------------------
 
 --
@@ -273,6 +307,14 @@ CREATE TABLE `trangthai` (
   `ID_trangthai` char(2) COLLATE utf8mb4_vietnamese_ci NOT NULL,
   `ten_trangthai` varchar(10) COLLATE utf8mb4_vietnamese_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_vietnamese_ci;
+
+--
+-- Dumping data for table `trangthai`
+--
+
+INSERT INTO `trangthai` (`ID_trangthai`, `ten_trangthai`) VALUES
+('n', 'không'),
+('y', 'có');
 
 --
 -- Indexes for dumped tables
@@ -363,10 +405,8 @@ ALTER TABLE `trangthai`
 -- AUTO_INCREMENT for table `admin`
 --
 ALTER TABLE `admin`
-  MODIFY `ID_admin` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `ID_admin` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
-ALTER TABLE `khachhang`
-  MODIFY `ID_khachhang` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `donhang`
 --
@@ -378,6 +418,12 @@ ALTER TABLE `donhang`
 --
 ALTER TABLE `giohang`
   MODIFY `ID_giohang` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `khachhang`
+--
+ALTER TABLE `khachhang`
+  MODIFY `ID_khachhang` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- Constraints for dumped tables
@@ -428,12 +474,6 @@ ALTER TABLE `khachhang`
 --
 ALTER TABLE `loaisanpham`
   ADD CONSTRAINT `kn_trangthai_loaiSP` FOREIGN KEY (`trangthai_loaisanpham`) REFERENCES `trangthai` (`ID_trangthai`);
-
---
--- Constraints for table `sanpham`
---
-ALTER TABLE `sanpham`
-  ADD CONSTRAINT `kn_ten_loaisanpham` FOREIGN KEY (`LoaiSP`) REFERENCES `loaisanpham` (`ten_loaisanpham`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
