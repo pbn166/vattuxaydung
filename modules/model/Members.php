@@ -15,6 +15,8 @@ class Member extends dbConnect
         }
     }
 
+    
+
     public function getAMember() {
 
     }

@@ -1,3 +1,5 @@
+
+   
 <?php
 
 require_once __DIR__ . '../../../database/dbConnect.php';
@@ -32,6 +34,36 @@ class Accounts extends dbConnect
         $stmt = null;
     }
 
+    public function getAllSPSatThep($DM)
+    {
+        $stmt = $this->connect()->prepare('SELECT * FROM `sanpham` WHERE `DanhMucSP` = ?');
+        $stmt->setFetchMode(PDO::FETCH_ASSOC);
+        if ($stmt->execute($DM)) {
+            // header('Content/type: application/json');
+            return ($stmt->fetchAll());
+        } else {
+            // page error
+        }
+
+        $stmt = null;
+    }
+
+    public function getAllLSP()
+    {
+        $stmt = $this->connect()->prepare('SELECT * FROM `loaisanpham`');
+        $stmt->setFetchMode(PDO::FETCH_ASSOC);
+        if ($stmt->execute()) {
+            // header('Content/type: application/json');
+            return ($stmt->fetchAll());
+        } else {
+            // page error
+        }
+
+        $stmt = null;
+    }
+
+    
+
 
 
     public function getUsernameBySession()
@@ -53,7 +85,7 @@ class Accounts extends dbConnect
             
     }
 
-
+    
     
 
     
@@ -87,6 +119,11 @@ class Accounts extends dbConnect
         }
     }
 
+    
+
+    
+
+
     public function login($username, $password, $role)
     {
         if($role == 'khachhang') {
@@ -105,6 +142,31 @@ class Accounts extends dbConnect
             $_SESSION['user'] = $stmt->fetch();
             $stmt = null;
             header('location: ' . $this->baseSite());
+        } else {
+            $stmt = null;
+            return 'Tên đăng nhập hoặc mật khẩu không đúng';
+        }
+        
+    }
+
+    public function loginadmin($username, $password, $role)
+    {
+        if($role == 'khachhang') {
+            $stmt = $this->connect()->prepare('SELECT `khachhang`.ID_khachhang, `taikhoan`.TEN_DANG_NHAP, `khachhang`.ten_khachhang FROM `taikhoan`, `khachhang` WHERE `taikhoan`.TEN_DANG_NHAP = `khachhang`.`TEN_DANG_NHAP` AND `taikhoan`.TEN_DANG_NHAP=? AND `taikhoan`.MATKHAU=?');
+        } else if($role == 'admin') {
+            $stmt = $this->connect()->prepare('SELECT `admin`.ID_admin, `taikhoan`.TEN_DANG_NHAP, `admin`.ten_admin FROM `taikhoan`, `admin` WHERE `taikhoan`.TEN_DANG_NHAP = `admin`.`TEN_DANG_NHAP` AND `taikhoan`.TEN_DANG_NHAP=? AND `taikhoan`.MATKHAU=?');
+        }
+        $stmt->setFetchMode(PDO::FETCH_ASSOC);
+        if (!$stmt->execute(array($username, $password))) {
+            echo "error connect";
+            $stmt = null;
+            exit();
+        }
+        if ($stmt->rowCount() > 0) {
+            session_start();
+            $_SESSION['user'] = $stmt->fetch();
+            $stmt = null;
+            header('location: ' . $this->baseSiteadmin());
         } else {
             $stmt = null;
             return 'Tên đăng nhập hoặc mật khẩu không đúng';

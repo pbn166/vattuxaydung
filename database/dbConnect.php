@@ -19,4 +19,8 @@ class dbConnect
     public function baseSite() {
         return 'http://localhost/vatlxd';
     }
+
+    public function baseSiteadmin(){
+        return 'http://localhost/vatlxd/?router=admin&page=trangchu';
+    }
 }
