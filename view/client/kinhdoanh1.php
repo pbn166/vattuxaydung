@@ -38,7 +38,7 @@
             <b>Trong báo cáo Triển vọng Ngắn hạn công bố ngày 14/4, Hiệp hội Thép Thế giới (WSA) dự báo nhu cầu sử dụng thép toàn cầu trong năm nay sẽ chỉ tăng 0,4% lên 1,84 tỷ tấn và tăng 2,2% trong năm 2023 đạt 1,88 tỷ tấn.</b>
         </p>
         <br>
-        <p class="img"><img class="baiviet-img" src="http://localhost/vatlxd/public/img/kinhdoanh1.png" alt=""></p>
+        <p class="img"><img class="baiviet-img" src="http://localhost/vatlxd/public/img/tintuc/kinhdoanh1.png" alt=""></p>
         <br>
         <p>
             Chủ tịch Uỷ ban Kinh tế Thế giới thuộc WSA ông Maxino Vedoya cho biết mặc dù nhu cầu sử dụng thép tại Trung Quốc trong năm 2021 suy yếu hơn so với dự báo nhưng nhu cầu sử dụng tại nhiều nơi trên Thế giới đã phục hồi mạnh, giúp nhu cầu sử dụng thép toàn cầu trong năm 2021 đã tăng mạnh 2,7% đạt 1,83 tỷ tấn.<br>

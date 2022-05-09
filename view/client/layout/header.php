@@ -20,7 +20,7 @@
         <div id="he2-2">
             <ul id="luachon">
                 <li><a href="http://localhost/vatlxd/?router=trangchu">Trang chủ</a></li>
-                <li><a href="">Sản phẩm</a></li>
+                <li><a href="http://localhost/vatlxd/?router=sanpham">Sản phẩm</a></li>
                 <li><a href="http://localhost/vatlxd/?router=gioithieu">Giới thiệu</a></li>
                 <li><a href="http://localhost/vatlxd/?router=tintuc">Tin tức</a></li>
                 <li><a href="http://localhost/vatlxd/?router=lienhe">Liên hệ</a></li>
@@ -30,8 +30,7 @@
     <div id="he4">
         <div id="he4-1">
             <div id="cart">
-                <a href="http://localhost/vatlxd/?router=giohang" class="link-header"><i class="fas fa-shopping-cart icon-cart icon-header"><span class="count-cart">0</span></i>Giỏ hàng</a>
-
+            <a href="http://localhost/vatlxd/?router=giohang" class="link-header"><i class="fas fa-shopping-cart icon-cart icon-header"><span class="count-cart">0</span></i>Giỏ hàng</a>
             </div>
             
         </div>
@@ -42,7 +41,8 @@
                 if($account->isLogin()) {
             ?>
             <div id="a2">
-                <a href="" class="link-header"><i class="fas fa-user icon-header"></i> <?php $account->getNameBySession(); ?> <i class="fas fa-caret-down"></i></a>
+                <a href="" class="link-header"><i class="fas fa-user icon-header"></i> 
+                <?php $account->getNameBySession()  ?> <i class="fas fa-caret-down"></i></a>
                 <ul class="dropdown-header">
                     <li><a href="http://localhost/vatlxd/?router=thongtintaikhoan" class="link-header">Thông tin tài khoản</a></li>
                     <li><a href="" class="link-header">Đổi mật khẩu</a></li>

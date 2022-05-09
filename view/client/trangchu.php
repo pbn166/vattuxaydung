@@ -26,7 +26,7 @@
                 <div id="cnt0-1">
                     <div class="w3-content w3-display-container" id="slideshow">
                         <img style="width: 100%; height: 100%; border-radius: 5px;" class="mySlides" src="https://www.congtythietke.co/uploads/category/vat-lieu-xay-dung_1625038991.jpg">
-                        <img style="width: 100%; height: 100%; border-radius: 5px;" class="mySlides" src="https://buiphat.vn/uploaded/kienthuc/cac-loai-vat-lieu-xay-dung-moi.jpg">
+                        
                         <img style="width: 100%; height: 100%; border-radius: 5px;" class="mySlides" src="https://www.congtythietke.co/uploads/contents/thi-truong-vat-lieu-xay-dung_1625038871.jpg">
                         <img style="width: 100%; height: 100%; border-radius: 5px;" class="mySlides" src="https://bizweb.dktcdn.net/100/398/008/articles/chon-vat-lieu-xay-dung.jpg?v=1620118345600">
                         <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
@@ -82,7 +82,7 @@
                                 <img style="width: 100%; height: 100%; border-radius: 5px;" src="https://satthepxaydung.com.vn/wp-content/uploads/2021/01/gia-sat-thep-xay-dung-viet-nam-giam-gia_400x300.jpg" alt="">
                             </div>
                             <div class="ctg_n">
-                                <a href="">
+                                <a href="http://localhost/vatlxd/?router=satthep">
                                     <div class="edit">Sắt - Thép</div>
                                 </a>
                             </div>

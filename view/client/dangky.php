@@ -62,6 +62,27 @@
 
             }
         }
+        if ($role == 'admin') {
+            if ($account->addAccount($username, $password) && $retailers->addRetailers($username, $name, $phone, $email)) {
+            ?>
+
+                <script>
+                    alert('Tạo tài khoản thành công');
+                    window.location = "http://localhost/vatlxd/?router=dangnhap";
+                </script>
+            <?php
+        
+
+            }else {
+            ?>
+
+                <script>
+                    alert('Tên tài khoản đã tồn tại');
+                    window.location = "http://localhost/vatlxd/?router=dangky";
+                </script>
+    <?php
+            }
+        }
     }
     ?>
 
@@ -73,7 +94,7 @@
                 <form action="" method="POST">
                     <select name="role" id="role">
                         <option value="khachhang">Vai trò: Khách hàng</option>
-                        <option value="nhabanle">Vai trò: Nhà bán lẻ</option>
+                        <option value="admin">Vai trò: Admin</option>
                     </select>
                     <input class="text" type="text" id="username" name="username" placeholder="Tên đăng nhập" required>
                     <input class="text inputName" type="text" name="fullname" placeholder="Họ và tên" required>

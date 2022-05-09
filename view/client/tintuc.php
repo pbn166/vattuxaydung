@@ -171,7 +171,7 @@ a{
                         <br>
                         <h2><center>ĐẰNG SAU CÂU CHUYỆN HÀNG TỒN KHO</center></h2>
                     </div>
-                    <img class="baiviet-img" src="http://localhost/vatlxd/public/img/tintuc2.png" alt="">
+                    <img class="baiviet-img" src="http://localhost/vatlxd/public/img/tintuc/tintuc2.png" alt="">
                     <p class="the_p">Hàng tồn kho mặc dù đã giảm dần trong thời gian qua nhưng cũng kéo theo sự suy giảm đáng lo ngại
                          về chỉ số sản xuất của doanh nghiệp, đồng thời cho thấy doanh nghiệp trong nước có thể...
                         <br>
@@ -199,7 +199,7 @@ a{
                         <br>
                         <h2><center>GIÁ THÉP BẮT ĐẦU TĂNG THEO GIÁ ĐIỆN</center></h2>
                     </div>
-                    <img class="baiviet-img" src="http://localhost/vatlxd/public/img/tintuc1.png" alt="">
+                    <img class="baiviet-img" src="http://localhost/vatlxd/public/img/tintuc/tintuc1.png" alt="">
                     <p class="the_p">Một số nhà thầu xây dựng, đại lý sắt thép và nhà sản xuất thép tại TPHCM cho biết giá thép xây dựng tăng 150.000 đồng/tấn kể từ hôm nay do tác động của giá đầu vào như điện, 
                         chi phí vận chuyển..
                         <br>
@@ -224,7 +224,7 @@ a{
                         <br>
                         <h2><center>VẬT LIỆU XÂY DỰNG ĐIÊU ĐỨNG</center></h2>
                     </div>
-                    <img class="baiviet-img" src="http://localhost/vatlxd/public/img/tintuc3.png" alt="">
+                    <img class="baiviet-img" src="http://localhost/vatlxd/public/img/tintuc/tintuc3.png" alt="">
                     <p class="the_p">
                     Đầu ra thu hẹp, bị chiếm dụng vốn, hàng ế kéo dài... nên các doanh nghiệp ngành xây dựng và vật liệu xây dựng đều lao đao.
                         <br>

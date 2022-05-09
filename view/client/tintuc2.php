@@ -42,7 +42,7 @@
             “Hiện đang xảy ra tình trạng mất cân đối giữa cung và cung do năng lực sản xuất của ngành vật liệu so với nhu cầu tiêu thụ của thị trường vượt từ 20 – 30%. Lý do là qua một thời gian dài (khoảng 5 năm) thị trường bất động sản đóng băng khiến cho ngành vật liệu xây dựng không thể tiêu thụ được”, ông Cường chia sẻ.
         </p>
         <br>
-        <p class="img"><img class="baiviet-img" src="http://localhost/vatlxd/public/img/tintuc2.png" alt=""></p>
+        <p class="img"><img class="baiviet-img" src="http://localhost/vatlxd/public/img/tintuc/tintuc2.png" alt=""></p>
         <br>
         <p>
             Ông Cường cho biết, lượng tồn kho đang tập trung nhiều nhất ở sắt thép, xi măng, gốm sứ, gạch xây dựng, thiết bị vệ sinh… Đây là những sản phẩm có liên quan mật thiết với lĩnh vực bất động sản.<br>

@@ -39,7 +39,7 @@
         hôm nay do tác động của giá đầu vào như điện, chi phí vận chuyển..
         </p>
         <br>
-        <p class="img"><img class="baiviet-img" src="http://localhost/vatlxd/public/img/tintuc1.png" alt=""></p>
+        <p class="img"><img class="baiviet-img" src="http://localhost/vatlxd/public/img/tintuc/tintuc1.png" alt=""></p>
         <br>
         <p>
             Ông Đỗ Duy Thái, Tổng giám đốc Tổng công ty Thép Việt (đơn vị sản xuất thép Pomina) xác nhận mức tăng giá thép thêm 150.000 đồng/tấn được áp dụng từ hôm nay (12-8).<br>

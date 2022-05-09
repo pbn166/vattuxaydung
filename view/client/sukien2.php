@@ -40,13 +40,13 @@
             Sau đây là một số hình ảnh, bảng biểu, số liệu trong báo cáo.
         </p>
         <br>
-        <p class="img"><img class="baiviet-img" src="http://localhost/vatlxd/public/img/sukien2.1.png" alt=""></p>
+        <p class="img"><img class="baiviet-img" src="http://localhost/vatlxd/public/img/tintuc/sukien2.png" alt=""></p>
         <br>
         <p>
            Và nhiều thông tin hữu ích khác ... <br>
            VCMR được xuất bản thành 2 phiên bản, tiếng Việt và tiếng Anh.<br>
         </p>
-        <p class="img"><img class="baiviet-img" src="http://localhost/vatlxd/public/img/sukien2.2.png" alt=""></p>
+        <p class="img"><img class="baiviet-img" src="http://localhost/vatlxd/public/img/tintuc/sukien2.1.png" alt=""></p>
         <p>
             xin trân trọng giới thiệu đến quý độc giả
         </p>   

@@ -39,7 +39,7 @@
         </p>
         <br>
         
-        <p class="img"><img class="baiviet-img" src="http://localhost/vatlxd/public/img/kinhdoanh2.png" alt=""></p>
+        <p class="img"><img class="baiviet-img" src="http://localhost/vatlxd/public/img/tintuc/kinhdoanh2.png" alt=""></p>
         <br>
         <p>
             <b>Bất ổn giá nhiên liệu</b><br>

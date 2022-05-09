@@ -38,7 +38,7 @@
             <b>Ngày 13/4, Tuần lễ giao thương quốc tế đồ gỗ và nội thất 2022 do Hội Mỹ nghệ và Chế biến gỗ TP. Hồ Chí Minh phối hợp với Cục Xúc tiến Thương mại (Bộ Công Thương) tổ chức đã chính thức khai mạc tại TP. Hồ Chí Minh, thu hút sự tham gia của đông đảo doanh nghiệp và đại diện người mua hàng quốc tế.</b>
         </p>
         <br>
-        <p class="img"><img class="baiviet-img" src="http://localhost/vatlxd/public/img/sukien1.png" alt=""></p>
+        <p class="img"><img class="baiviet-img" src="http://localhost/vatlxd/public/img/tintuc/sukien1.png" alt=""></p>
         <br>
         <p>
             Tuần lễ giao thương quốc tế đồ gỗ và nội thất (Vietnam Furniture Matching Week) 2022  bao gồm các chuỗi hoạt động ofline và online. Trong đó, Furniture Sourcing Day được tổ chức trực tiếp trong 2 ngày 13 và 14/4/2022, hướng đến hỗ trợ các nhà sản xuất Việt Nam tìm kiếm đối tác và kết nối giao thương B2B. Doanh nghiệp trong ngành sẽ được tiếp cận các nhà nhà mua hàng quốc tế cũng như các đơn vị cung cấp dịch vụ phụ trợ để chia sẻ các thông tin, quảng bá sản phẩm chủ lực, sản phẩm mới nhất của mình.<br>

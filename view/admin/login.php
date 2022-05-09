@@ -9,7 +9,7 @@ if ($account->isLogin()) {
 }
 
 if (isset($_POST['submitLogin'])) {
-    $result = $account->login(trim($_POST['username']), md5($_POST['password']), $_POST['role']);
+    $result = $account->loginadmin(trim($_POST['username']), md5($_POST['password']),$_POST['role']);
 }
 ?>
 
@@ -19,6 +19,7 @@ if (isset($_POST['submitLogin'])) {
 <head>
     <title>Đăng nhập</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="http://localhost/vatlxd/public/img/logo.png">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <script type="application/x-javascript">
         addEventListener("load", function() {
@@ -46,8 +47,7 @@ if (isset($_POST['submitLogin'])) {
                 <?php echo $result != null ? '<h2 class="message">' . $result . '</h2>' : '' ?>
                 <form action="" method="post">
                     <select name="role" id="role">
-                        <option value="khachhang">Vai trò: Khách hàng</option>
-                       
+                        <option value="admin">Vai trò: Admin</option>
                     </select>
                     <input class="text inputUsername" type="text" name="username" placeholder="Tên đăng nhập" required>
                     <input class="text" type="password" name="password" placeholder="Mật khẩu" required>
@@ -56,8 +56,7 @@ if (isset($_POST['submitLogin'])) {
                     </div>
                     <input type="submit" name="submitLogin" value="ĐĂNG NHẬP">
                 </form>
-                <a class="backHome" href="http://localhost/vatlxd">Tiếp tục mua sắm</a>
-                <p>Bạn đã có tài khoản? <a href="http://localhost/vatlxd/?router=dangky"> Đăng ký</a></p>
+                
             </div>
         </div>
     </div>
