@@ -29,15 +29,18 @@
         ?>
 
         <!-- Content -->
-    <div class="wrap">
-        <div class="product">
+    <div class="wrap"  >
+        
+            <article style=“display: flex;”>
+            <div>
+            <div class="product">
             <?php
                 foreach($accounts as $key => $value) {
             ?>
             <div class="detail_pro">
                 <div class="item">
                     <div class="item_img">
-                        <img src="public/img/sanpham/<?php echo $value['HinhAnhSP'] ?>" alt="không tồn tại">
+                        <img class="imgsp" src="public/img/sanpham/<?php echo $value['HinhAnhSP'] ?>" alt="không tồn tại">
                     </div>
                     <div class="item_des">
                       <div class="item_title">Tên sản phẩm:<?php echo $value['TenSP'] ?></div>  
@@ -51,18 +54,15 @@
             </div>
             <?php }; ?>
         </div>
+            </div>
+            </article>
+        </div>
+         <!-- End content -->
+        <!-- footer -->
+     <?php include('./view/client/layout/footer.php'); ?>
+        <!-- End footer -->
         
     </div>
-
-        <!-- End content -->
-
-        <!-- footer -->
-        <?php include('./view/client/layout/footer.php'); ?>
-        <!-- End footer -->
-    </div>
-    
-    
-
 </body>
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 <!-- JavaScript Bundle with Popper -->
