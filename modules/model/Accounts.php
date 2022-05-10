@@ -34,19 +34,7 @@ class Accounts extends dbConnect
         $stmt = null;
     }
 
-    public function getAllSPSatThep($DM)
-    {
-        $stmt = $this->connect()->prepare('SELECT * FROM `sanpham` WHERE `DanhMucSP` = ?');
-        $stmt->setFetchMode(PDO::FETCH_ASSOC);
-        if ($stmt->execute($DM)) {
-            // header('Content/type: application/json');
-            return ($stmt->fetchAll());
-        } else {
-            // page error
-        }
-
-        $stmt = null;
-    }
+    
 
     public function getAllLSP()
     {
@@ -61,6 +49,8 @@ class Accounts extends dbConnect
 
         $stmt = null;
     }
+
+    
 
     
 

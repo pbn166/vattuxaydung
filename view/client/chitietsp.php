@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/x-icon" href="http://localhost/vatlxd/public/img/logo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="http://localhost/vatlxd/public/css/layouts.css">
@@ -26,163 +27,54 @@
         <!-- header -->
         <?php include('./view/client/layout/header.php'); ?>
         <!-- End header -->
-
+        <?php 
+          require_once __DIR__ . '../../../modules/model/Products.php';
+          $products = new Products();
+          $product = null;
+          if (isset($_GET['MaSP'])){
+              $product = $products->getProductbyID($_GET['MaSP']);
+          }
+        ?>
         <!-- Content -->
         <div class="pd-wrap">
       <div class="container">
             <div class="heading-section">
-                <h2>Product Details</h2>
+                <h2>THÔNG TIN CHI TIẾT SẢN PHẨM</h2>
             </div>
             <div class="row">
               <div class="col-md-6">
                 <div id="slider" class="owl-carousel product-slider">
               <div class="item">
-                  <img src="https://vuonsaigon.vn/wp-content/uploads/2022/01/trun-que-vien-1.jpg" />
-              </div>
-              
-              <div class="item">
-                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQI6nUmObt62eDkqNSmIvCN_KkQExtbpJmUbVx_eTh_Y3v3r-Jw" />
-              </div>
-              
-              <div class="item">
-                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQI6nUmObt62eDkqNSmIvCN_KkQExtbpJmUbVx_eTh_Y3v3r-Jw" />
-              </div>
-              
-              <div class="item">
-                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQI6nUmObt62eDkqNSmIvCN_KkQExtbpJmUbVx_eTh_Y3v3r-Jw" />
-              </div>
-            </div>
-            <div id="thumb" class="owl-carousel product-thumb">
-              <div class="item">
-                  <img src="https://vuonsaigon.vn/wp-content/uploads/2022/01/trun-que-vien-1.jpg" />
-              </div>
-              <div class="item">
-                  <img src="https://product.hstatic.net/1000269461/product/z2180152758970_84865e900b24d06c9e6d666607cda03a_ad014ef48b07463c96cb91d4d0d98ed5_small.jpg" />
-              </div>
-              <div class="item">
-                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQI6nUmObt62eDkqNSmIvCN_KkQExtbpJmUbVx_eTh_Y3v3r-Jw" />
-              </div>
-              
-              <div class="item">
-                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQI6nUmObt62eDkqNSmIvCN_KkQExtbpJmUbVx_eTh_Y3v3r-Jw" />
-              </div>
-              
-              <div class="item">
-                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQI6nUmObt62eDkqNSmIvCN_KkQExtbpJmUbVx_eTh_Y3v3r-Jw" />
+                <img src="public/img/sanpham/<?php echo $product[0]['HinhAnhSP'] ?>" alt="không tồn tại">
               </div>
             </div>
               </div>
               <div class="col-md-6">
                 <div class="product-dtl">
                   <div class="product-info">
-                    <div class="product-name">Variable Product</div>
+                    <div class="product-name"><?php echo $product[0]['TenSP'] ?></div>
                     <div class="reviews-counter">
-                  <div class="rate">
-                      <input type="radio" id="star5" name="rate" value="5" checked />
-                      <label for="star5" title="text">5 stars</label>
-                      <input type="radio" id="star4" name="rate" value="4" checked />
-                      <label for="star4" title="text">4 stars</label>
-                      <input type="radio" id="star3" name="rate" value="3" checked />
-                      <label for="star3" title="text">3 stars</label>
-                      <input type="radio" id="star2" name="rate" value="2" />
-                      <label for="star2" title="text">2 stars</label>
-                      <input type="radio" id="star1" name="rate" value="1" />
-                      <label for="star1" title="text">1 star</label>
-                    </div>
-                  <span>3 Reviews</span>
+                  
                 </div>
-                    <div class="product-price-discount"><span>$39.00</span><span class="line-through">$29.00</span></div>
+                    <div class="product-price-discount"><?php echo number_format ($product[0]['GiaSP']) .' VNĐ'?></div>
                   </div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <label for="size">Size</label>
-                  <select id="size" name="size" class="form-control">
-                    <option>S</option>
-                    <option>M</option>
-                    <option>L</option>
-                    <option>XL</option>
-                  </select>
-                    </div>
-                    <div class="col-md-6">
-                      <label for="color">Color</label>
-                  <select id="color" name="color" class="form-control">
-                    <option>Blue</option>
-                    <option>Green</option>
-                    <option>Red</option>
-                  </select>
-                    </div>
-                  </div>
+                  <p><?php echo $product[0]['MoTa'] ?></p>
                   <div class="product-count">
-                    <label for="size">Quantity</label>
+                    <label for="size">Số lượng</label>
                     <form action="#" class="display-flex">
                     <div class="qtyminus">-</div>
                     <input type="text" name="quantity" value="1" class="qty">
                     <div class="qtyplus">+</div>
                 </form>
-                <a href="#" class="round-black-btn">Add to Cart</a>
+                <a href="#" class="round-black-btn">Thêm vào giỏ hàng</a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="product-info-tabs">
-              <ul class="nav nav-tabs" id="myTab" role="tablist">
-              <li class="nav-item">
-                <a class="nav-link active" id="description-tab" data-toggle="tab" href="#description" role="tab" aria-controls="description" aria-selected="true">Description</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" id="review-tab" data-toggle="tab" href="#review" role="tab" aria-controls="review" aria-selected="false">Reviews (0)</a>
-              </li>
-          </ul>
-          <div class="tab-content" id="myTabContent">
-              <div class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="description-tab">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
-              </div>
-              <div class="tab-pane fade" id="review" role="tabpanel" aria-labelledby="review-tab">
-                <div class="review-heading">REVIEWS</div>
-                <p class="mb-20">There are no reviews yet.</p>
-                <form class="review-form">
-                    <div class="form-group">
-                      <label>Your rating</label>
-                      <div class="reviews-counter">
-                    <div class="rate">
-                        <input type="radio" id="star5" name="rate" value="5" />
-                        <label for="star5" title="text">5 stars</label>
-                        <input type="radio" id="star4" name="rate" value="4" />
-                        <label for="star4" title="text">4 stars</label>
-                        <input type="radio" id="star3" name="rate" value="3" />
-                        <label for="star3" title="text">3 stars</label>
-                        <input type="radio" id="star2" name="rate" value="2" />
-                        <label for="star2" title="text">2 stars</label>
-                        <input type="radio" id="star1" name="rate" value="1" />
-                        <label for="star1" title="text">1 star</label>
-                    </div>
-                  </div>
-                </div>
-                    <div class="form-group">
-                      <label>Your message</label>
-                      <textarea class="form-control" rows="10"></textarea>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <input type="text" name="" class="form-control" placeholder="Name*">
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <input type="text" name="" class="form-control" placeholder="Email Id*">
-                        </div>
-                      </div>
-                    </div>
-                    <button class="round-black-btn">Submit Review</button>
-                  </form>
-              </div>
+            
+                    
           </div>
-        </div>
         
-        <div style="text-align:center;font-size:14px;padding-bottom:20px;">Get free icon packs for your next project at <a href="http://iiicons.in/" target="_blank" style="color:#ff5e63;font-weight:bold;">www.iiicons.in</a></div>
-      </div>
     </div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -201,7 +93,7 @@
 <!-- <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script> -->
 <!-- JavaScript Bundle with Popper -->
 <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>   -->
-  <script>
+<script>
        $(document).ready(function() {
 		    var slider = $("#slider");
 		    var thumb = $("#thumb");

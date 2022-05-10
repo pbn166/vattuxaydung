@@ -18,7 +18,13 @@
         <!-- header -->
         <?php include('./view/client/layout/header.php'); ?>
         <!-- End header -->
+        <?php
+   
+           
+            $accounts = $account->getAllLSP();
+         
 
+        ?>
         <!-- Content -->
         <!-- Code trang chu o day -->
         <div id="wrap">
@@ -76,72 +82,24 @@
                     <b>DANH MỤC SẢN PHẨM</b>
                 </div>
                 <div id="product">
+                    <?php
+                        foreach($accounts as $key => $value) {
+                    ?>
                     <div class="prod">
                         <div class="prd prd-1">
                             <div class="ctg_i">
-                                <img style="width: 100%; height: 100%; border-radius: 5px;" src="https://satthepxaydung.com.vn/wp-content/uploads/2021/01/gia-sat-thep-xay-dung-viet-nam-giam-gia_400x300.jpg" alt="">
+                                <img src="public/img/LSP/<?php echo $value['HinhAnhLSP'] ?>" alt="">
                             </div>
                             <div class="ctg_n">
-                                <a href="http://localhost/vatlxd/?router=satthep">
-                                    <div class="edit">Sắt - Thép</div>
+                                <a href="http://localhost/vatlxd/?router=danhmuc&DanhMucSP=<?php echo $value['DanhMucSP'] ?>">
+                                    <div class="edit"><?php echo $value['ten_loaisanpham'] ?></div>
                                 </a>
                             </div>
-                        </div>
-                        <div class="prd prd-1">
-                            <div class="ctg_i">
-                                <img style="width: 100%; height: 100%; border-radius: 5px;" src="https://nhamaysatthep.vn/wp-content/uploads/2020/11/cat-trang-1.jpg" alt="">
-                            </div>
-                            <div class="ctg_n">
-                                <a href="">
-                                    <div class="edit">Cát</div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="prd prd-1">
-                            <div class="ctg_i">
-                                <img style="width: 100%; height: 100%; border-radius: 5px;" src="https://nhamaysatthep.vn/wp-content/uploads/2020/11/1-3.jpg" alt="">
-                            </div>
-                            <div class="ctg_n">
-                                <a href="">
-                                    <div class="edit">Đá</div>
-                                </a>
-                            </div>
+
                         </div>
                     </div>
-                    <div class="prod">
-                        <div class="prd prd-2">
-                            <div class="ctg_i">
-                                <img style="width: 100%; height: 100%; border-radius: 5px;" src="http://www.phudien.vn/upload/Product%20400x200/Gach-tuynel-4-lo---Phu-Dien-.jpg" alt="">
-                            </div>
-                            <div class="ctg_n">
-                                <a href="">
-                                    <div class="edit">Gạch</div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="prd prd-2">
-                            <div class="ctg_i">
-                                <img style="width: 100%; height: 100%; border-radius: 5px;" src="https://www.tradeline.vn/Thumb.ashx?s=240&file=/UploadImages/users/upload/member/SIAMCITY/22111808531253insee-betong-san-tradelinejpg0.jpg" alt="">
-                            </div>
-                            <div class="ctg_n">
-                                <a href="">
-                                    <div class="edit">Bê tông</div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="prd prd-2">
-                            <div class="ctg_i">
-                                <img style="width: 100%; height: 100%; border-radius: 5px;" src="https://www.tradeline.vn/Thumb.ashx?s=240&file=/UploadImages/users/upload/member/VATTUHAUGIANG/28031909200520bao-xi-mang-tay-do-export-tradelinejpg0.jpg" alt="">
-                            </div>
-                            <div class="ctg_n">
-                                <a href="">
-                                    <div class="edit">Xi măng</div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div></div>
+                    <?php }; ?>
+                </div>    
             </div>
             <div id="content2">
 

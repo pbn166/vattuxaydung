@@ -20,8 +20,7 @@ $route->add('thongtintaikhoan','client/thongtintaikhoan.php');
 $route->add('trangchu','client/trangchu.php');
 $route->add('lienhe','client/lienhe.php');
 $route->add('gioithieu','client/gioithieu.php');
-$route->add('satthep','client/satthep.php');
-
+$route->add('danhmuc','client/danhmuc.php');
 
 
 
